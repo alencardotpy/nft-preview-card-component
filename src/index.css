@@ -1,0 +1,51 @@
+:root{
+    --MobileWidth: 375px;
+    --DesktopWidth: 1440px;
+    
+    /* Colors*/
+    
+    /* Primary*/
+    
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    /* Neutral*/
+    
+    --VeryDarkBlue: hsl(217, 54%, 11%);
+    --DarkBlue: hsl(216, 50%, 16%);
+    --SmoothDarkBlue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    
+    /* Typography*/
+    
+    --FontSize: 18px;
+    
+    --FontFamily:'Outfit', sans-serif;
+    --FontWeightSmall: 300;
+    --FontWeightMedium: 400;
+    --FontWeightLarge: 600;
+    }
+    
+    
+    body{
+        margin:0;
+        font-family: var(--FontFamily);
+        background-color: var(--VeryDarkBlue);
+        color:var(--White);
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .attribution{
+        display:flex;
+        flex-wrap: wrap;
+        gap:5px;
+        align-content: center;
+        justify-content: center;
+        width:250px;
+        margin:5px  auto;
+    }

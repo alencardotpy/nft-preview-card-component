@@ -1,1 +1,215 @@
-@import url("../index.css");
+@import url("../../index.css");
+/* BEGIN CARD*/
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:var(--DarkBlue);
+    margin:0 auto;
+    border-radius:20px;
+    padding:15px;
+    width:310px;
+}
+
+.card__container{
+    margin:5px auto;
+    display:flex;
+    width:300px;
+
+}
+
+.card__container-image{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+    margin: 10px auto 0 auto;
+}
+
+.card__divider{
+    opacity: 0.1;
+    width:100%;
+    height:0.001px;
+    margin:0 auto;
+}
+/* END CARD */
+
+/* BEGIN PRODUCT IMAGE*/
+.product-image{
+    padding:0;
+}
+
+.product-image__image{
+    margin:0 auto;
+
+}
+
+.image-product{
+    position: relative;
+    border-radius:10px;
+
+}
+
+@keyframes image-mask-in {
+    from {
+        opacity:0.0;
+
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.image-mask{
+    position: absolute;
+    padding:126px;
+    opacity:0;
+    margin:0 auto;
+    animation: image-mask-out 170ms ease-out;
+    animation-fill-mode: forwards;
+    border-radius:10px;
+
+}
+
+@keyframes image-mask-out {
+    from {
+        opacity:1;
+        background: rgba(23, 231, 231, 0.512);
+
+    }
+    to {
+        opacity:0;
+    }
+}
+.image-mask--hover:hover{
+    position: absolute;
+    padding:126px;
+    background:rgba(0, 255, 255, 0.512);
+    opacity:0;
+    margin:0 auto;
+    animation: image-mask-in 170ms ease-in;
+    animation-fill-mode: forwards;
+}
+/* END PRODUCT IMAGE*/
+
+/* BEGIN PRODUCT CONTEXT*/
+.product-context{
+  flex-direction: column;
+  padding:0;
+  margin:10px 0;
+}
+
+.product-context__title{
+    margin:10px auto;
+    width:100%;
+    font-size: 24px;
+}
+
+.product-context__title:hover{
+    color:var(--Cyan);
+}
+
+.product-context__description{
+    margin:0;
+    line-height: 30px;
+    color:var(--SoftBlue);
+    font-weight: var(--FontWeightSmall);
+
+}
+
+.product-context__container{
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    gap: 100px;
+    padding:0;
+}
+
+/* END PRODUCT CONTEXT*/
+
+/* BEGIN CRYPTO ITEM*/
+
+.crypto-item{
+    align-self: flex-start;
+    width:auto;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    gap:8px;
+
+
+}
+
+.crypto-item__image{
+    width:11px;
+    height:20px;
+    
+}
+
+.crypto-item__text{
+    color:var(--Cyan);
+    font-weight: var(--FontWeightLarge);
+}
+
+/* END CRYPTO ITEM*/
+
+/* BEGIN TIME ITEM*/
+
+.time-item{
+    align-self: flex-end;
+    width:auto;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    gap:8px;
+    padding:0;
+
+}
+
+.time-item__image{
+    align-self: center;
+    display:flex;
+    position: relative;
+    right:13px;
+}
+
+.time-item__text{
+    color:var(--SoftBlue);
+    display:flex;
+    position: relative;
+    right:10px;
+    font-weight: var(--FontWeightSmall);
+    align-content: flex-start;
+}
+
+.creator-container{
+    display:flex;
+    gap:5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.creator-container__image{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    border:1.8px solid white;
+}
+
+.creator-container__text{
+    color:var(--SoftBlue);
+    position: relative;
+    margin-left:5px;
+
+}
+
+.creator-container__text{
+    font-weight: var(--FontWeightSmall);
+}
+
+.creator-container__creator--hover:hover{
+    color:var(--Cyan);
+
+}
